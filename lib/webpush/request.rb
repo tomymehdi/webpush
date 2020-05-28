@@ -142,7 +142,7 @@ module Webpush
     end
 
     def api_key?
-      !(api_key.nil? || api_key.empty?) && @endpoint =~ /\Ahttps:\/\/(android|gcm-http)\.googleapis\.com/
+      !(api_key.nil? || api_key.empty?) && @endpoint =~ /\Ahttps:\/\/(android|gcm-http|fcm)\.googleapis\.com/
     end
 
     def vapid?
